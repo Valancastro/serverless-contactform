@@ -1,0 +1,118 @@
+html, body {
+  color: #333;
+  font-size: 16px;
+  line-height: 20px;
+}
+body {
+  margin: 20px;
+}
+h1 {
+  line-height: 1.2;
+  margin-bottom: 35px;
+  text-align: center;
+}
+.container {
+  margin: 0 auto 35px;
+  max-width: 450px;
+
+}
+h1.form-header {
+  font-family: sans-serif;
+  text-align: left;
+}
+
+.error{
+  display: none;
+  margin-left: 10px;
+}		
+
+.error_show{
+  color: red;
+  margin: 2px 0;
+  display: block;
+  font-family: sans-serif;
+}
+
+.form-field {
+  display: block;
+  margin-bottom: 16px;
+}
+.form-field--is-active .form-field__control::after {
+  border-bottom: 2pt solid #1a6fdc;
+  transform: scaleX(150);
+}
+.form-field--is-active .form-field__label {
+  color: #1a6fdc;
+  font-size: 0.75rem;
+  transform: translateY(-14px);
+  font-weight: 600;
+}
+.form-field--is-filled .form-field__label {
+  font-size: 0.75rem;
+  transform: translateY(-14px);
+}
+.form-field__label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: normal;
+  left: 0;
+  margin: 0;
+  padding: 18px 12px 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.4s;
+  width: 100%;
+  font-family: sans-serif;
+}
+.form-field__control {
+  background: #eee;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.form-field__control::after {
+  border-bottom: 2px solid #1a6fdc;
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  transform: scaleX(0);
+  transition: all 0.4s;
+  width: 1%;
+}
+.form-field__input, .form-field__textarea {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #999;
+  color: #333;
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 24px;
+  outline: 0;
+  padding: 0 12px 10px 12px;
+  width: 100%;
+}
+.form-field__textarea {
+  height: 150px;
+}
+
+button.btn {
+  max-width: 100%;
+  width: 113px;
+  margin: 1.5em 0 0 0;
+  border: 1px solid #b9b9b9;
+  border-radius: 3px;
+  height: 2.5em;
+  font-size: 1em;
+  font-weight: 600;
+  background: #eeeeee;
+  transition: background .2s linear;
+}
+
+button.btn:hover {
+  background: #d7d7d7;
+}
